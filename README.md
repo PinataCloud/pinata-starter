@@ -1,5 +1,7 @@
 ## Getting Started
 
+This is the TypeScript boilerplate for the Pinata starter app. 
+
 Create a new Pinata project using this command:
 
 ```
