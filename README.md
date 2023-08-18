@@ -1,5 +1,7 @@
 ## Getting Started
 
+This is the TypeScript + Tailwind CSS boilerplate Pinata starter template.
+
 Create a new Pinata project using this command:
 
 ```
