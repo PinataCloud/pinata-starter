@@ -24,18 +24,28 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  height: 100%;
+  width: 100%;
 }
 
 body {
   font-family: "Telegraf", sans-serif;
-  font-size: 1.25rem;
-  line-height: 2rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   margin: 0;
+  min-height: 100vh;
+  background: var(--color-light);
+  color: black;
 }
 
 main {
   min-height: 100vh;
   width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
 }
 
@@ -44,6 +54,7 @@ h2,
 h3,
 h4 {
   font-family: "Agrandir Wide";
+  font-weight: bold;
 }
 
 h1 {
@@ -62,16 +73,6 @@ a {
   flex-direction: row;
 }
 
-.container {
-  width: 100%;
-  height: 100%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .hero-background {
   height: 100%;
   width: 100%;
@@ -81,23 +82,28 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+}
+
+.container {
+  height: 100%;
+  max-width: 1280px;
 }
 
 .logo {
-  width: 85%;
+  width: 100%;
   margin: auto;
   margin-top: 4rem;
   display: flex;
-  justify-content: flex-start;
+  justify-content: start;
   align-items: center;
+  gap: 2rem; 
 }
 
 .hero {
   height: 100%;
-  width: 85%;
+  width: 100%;
   margin: auto;
-  margin-top: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -106,6 +112,16 @@ a {
 
 .copy {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.code {
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+  font-style: italic;
+  border: 2px solid var(--color-accent);
 }
 
 .hero-img {
@@ -174,12 +190,6 @@ a {
   margin-right: 10px;
 }
 
-.code {
-  padding: 2px 6px;
-  border-radius: 5px;
-  font-style: italic;
-  border: 2px solid var(--color-accent);
-}
 
 .file-list a {
   border-bottom: 2px solid var(--color-accent);
@@ -203,7 +213,7 @@ a {
 }
 
 .grid {
-  width: 85%;
+  max-width: 1280px;
   min-height: 100%;
   margin: 2rem auto 2rem auto;
   display: flex;
@@ -221,8 +231,9 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 450px;
+  height: 475px;
   padding: 2rem;
+  gap: 1rem;
 }
 
 .card h2 {
@@ -241,8 +252,9 @@ a {
 }
 
 .footer {
-  width: 85%;
-  padding: 0.5rem 0 0.5rem 0;
+  height: 100%;
+  max-width: 1280px;
+  padding: 1.5rem auto 1.5rem auto !important;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -250,15 +262,22 @@ a {
   margin: auto;
 }
 
+.footer p {
+  font-size: 0.75rem;
+}
+
 .socials {
   display: flex;
   align-items: center;
-  gap: 3rem;
+  justify-content: center;
+  gap: 2.5rem;
+  padding-top: 0.5rem;
+  margin-right: 1rem;
 }
 
 .socials svg {
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 @keyframes moving-gradient {
