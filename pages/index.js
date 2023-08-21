@@ -57,7 +57,7 @@ export default function Home() {
         <div className="hero-background">
           <div className="container">
             <div className="logo">
-              <Image src="/logo.png" alt="Pinata logo" height={45} width={172.5} />
+              <Image src="/logo.png" alt="Pinata logo" height={30} width={115} />
             </div>
             <div className="hero">
               <div className="copy">
