@@ -3,7 +3,7 @@
 import { useState, useRef } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import Files from "@/components/files";
+import Files from "@/components/Files";
 
 export default function Home() {
 	const [file, setFile] = useState("");
