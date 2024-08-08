@@ -5,7 +5,7 @@ const GATEWAY_URL = process.env.NEXT_PUBLIC_GATEWAY_URL
 export default function Files(props) {
 	return (
 		<div className="file-viewer">
-			<p>Your IPFS CID:</p>
+			<p>Your IPFS CID: </p>
 			<p>{props.cid}</p>
 			<a
 				href={`${GATEWAY_URL}/ipfs/${props.cid}?pinataGatewayToken=${process.env.NEXT_PUBLIC_GATEWAY_TOKEN}`}
