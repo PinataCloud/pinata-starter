@@ -4,6 +4,8 @@ import { useState, useRef } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import Files from "@/components/Files";
+import Link from "next/link";
+import { ArrowRightIcon } from "@heroicons/react/16/solid";
 
 export default function Home() {
 	const [file, setFile] = useState("");
@@ -89,6 +91,12 @@ export default function Home() {
 									style={{ display: "none" }}
 								/>
 								<div>
+									 <Link
+            href="/login"
+            className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"
+          >
+            <span>Log in</span> <ArrowRightIcon className="w-5 md:w-6" />
+          </Link>
 									<button
 										onClick={loadRecent}
 										className="mr-10 w-[150px] bg-light text-secondary border-2 border-secondary rounded-3xl py-2 px-4 hover:bg-secondary hover:text-light transition-all duration-300 ease-in-out"
